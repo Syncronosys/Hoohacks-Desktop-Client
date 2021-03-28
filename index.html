@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Polymer Client</title>
+    <link rel="stylesheet" type="text/css" href="lib/styles/main.css" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+    <script src="lib/scripts/apicalls.js"></script>
+    <script src="lib/scripts/appfunctions.js"></script>
+  </head>
+
+  <body>
+    <nav>
+      <div>
+        <img src="lib/images/logo.png" />
+        <div>Polymer</div>
+      </div>
+      <div>
+        <p id="min" onclick="window.api.send('toMain', 'min')">_</p>
+        <p id="close" onclick="window.api.send('toMain', 'close')">X</p>
+      </div>
+    </nav>
+    <div class="initial">
+      <h3>Enter session code:</h3>
+      <input type="text" placeholder="Enter Name:" spellcheck="false" id="name" />
+      <input type="text" maxlength=8 placeholder="Enter code:" spellcheck="false" id="session" />
+      <button id="joinbutton">Join</button>
+      <p id="error"></p>
+    </div>
+    <div class="active">
+      <video autoplay></video>
+      <div>
+        <h5>Your perceved emotions:</h5>
+        <div class="emotionwrapper"></div>
+    </div>
+    <canvas></canvas>
+  </body>
+</html>

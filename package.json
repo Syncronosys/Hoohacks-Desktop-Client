@@ -1,0 +1,16 @@
+{
+    "name": "hoohacksclient",
+    "version": "1.0.0",
+    "main": "main.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^12.0.2"
+    },
+    "dependencies": {},
+    "scripts": {
+        "start": "electron ."
+    },
+    "description": ""
+}

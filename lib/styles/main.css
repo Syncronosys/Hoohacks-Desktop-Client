@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  background-color: #181818;
+  color: white;
+  font-family: "Montserrat";
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  src: url("../fonts/r.ttf");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 500;
+  src: url("../fonts/m.ttf");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
+  src: url("../fonts/s.ttf");
+}
+
+nav {
+  padding: 0.5em 2em;
+  font-size: 90%;
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  box-sizing: border-box;
+
+  background-color: #232323;
+
+  -webkit-app-region: drag;
+}
+nav div {
+  display: inline-flex;
+  align-items: center;
+}
+nav img {
+  height: 2em;
+}
+nav div:last-child {
+  margin-left: auto;
+
+  font-weight: 600;
+}
+
+nav div:last-child p {
+  margin: 0 1em;
+}
+
+nav p {
+  -webkit-app-region: no-drag;
+
+  cursor: pointer !important;
+}
+
+:not(input):not(textarea),
+:not(input):not(textarea)::after,
+:not(input):not(textarea)::before {
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+input,
+button,
+textarea,
+:focus {
+  outline: none;
+}
+
+.initial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 15%;
+}
+.initial input {
+  background-color: transparent;
+
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: white;
+
+  margin-top: 2em;
+
+  padding: 0.5em;
+
+  border-radius: 0.5em;
+
+  transition: all 0.1s ease-out;
+}
+.initial h3 {
+  font-weight: 500;
+}
+.initial input:focus {
+  border-color: #0099ff;
+}
+.initial input::placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+.initial button {
+  margin-top: 2em;
+
+  padding: 0.5em 3em;
+
+  background-color: #0099ff;
+  border: none;
+
+  color: white;
+  font-weight: 400;
+  font-size: 105%;
+  font-family: "Montserrat";
+
+  cursor: pointer;
+
+  border-radius: 0.5em;
+}
+
+video {
+  width: 100%;
+}
+
+.active-emotion {
+  display: flex;
+  align-items: center;
+
+  font-size: 90%;
+}
+.active-emotion .active-emotion-title {
+  font-weight: 500;
+  margin-right: 1em;
+}
+
+canvas {
+  position: absolute;
+  left: -1000px;
+  top: -1000px;
+}
+
+.active {
+  display: none;
+}
+
+#error {
+  margin-top: 2em;
+  font-size: 90%;
+  color: red;
+}
